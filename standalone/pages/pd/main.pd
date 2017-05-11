@@ -1,0 +1,20 @@
+#N canvas 296 118 951 636 10;
+#X obj 130 203 osc~;
+#X obj 130 292 dac~;
+#X obj 130 178 nbx 5 14 -1e+37 1e+37 0 1 empty empty empty 0 -8 0 10
+-262144 -1 -1 400 256;
+#X obj 130 247 *~;
+#X obj 226 109 r volume;
+#X obj 130 110 r frequency;
+#X obj 226 214 line~;
+#X msg 226 188 \$1 20;
+#X text 271 195 this line~ is added to smooth each volume change over
+20ms;
+#X connect 0 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;
+#X connect 3 0 1 1;
+#X connect 4 0 7 0;
+#X connect 5 0 2 0;
+#X connect 6 0 3 1;
+#X connect 7 0 6 0;

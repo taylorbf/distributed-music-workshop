@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script src="/rhizome/rhizome.js"></script>
+    <script type="text/javascript" src="libraries/mt.js"></script>
+    <script type="text/javascript" src="libraries/webpd-latest.js"></script>
+    <script type="text/javascript" src="libraries/jquery.js"></script>
+  </head>
+  <body>
+
+    <div id="position" style="height:100%"></div>
+
+    <script>
+
+      /* Confic Rhizome */
+
+      var client = new rhizome.Client()
+
+      client.start(function(err) {
+        if (err) throw err
+        console.log('subscribing...')
+      })
+
+
+      /* Config the UI */
+
+      // the event should probably be placed into the client.start callback above
+      var position = new mt.Position('#position',{
+        minX: 0,
+        maxX: 500,
+        minY: 0,
+        maxY: 1,
+        event: function(v) {
+          // send v.x and v.y through rhizome
+          console.log(v);
+          client.send('/frequency', [v.x])
+          client.send('/volume', [v.y])
+        }
+      })
+
+    </script>
+
+  </body>
+</html>
