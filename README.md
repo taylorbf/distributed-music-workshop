@@ -14,10 +14,10 @@ Discussion: Concept & History <br>
 [Rhizome](#rhizome) <br>
 [Templates](#templates)
 
-**lunch**
+**Lunch**
 
-Lab time<br>
-(Pauses to investigate different strategies / interfaces / synths) <br>
+Develop Your Instrument<br>
+Investigation of different strategies / interfaces / synths <br>
 Performance
 
 
@@ -100,29 +100,12 @@ incl command line primer
 
 ### [Standalone web instrument](/standalone/)  
 
-  *(WebPD / NexusUI only)*
-
-
-
 ### [One Performer controls N Devices](/one-to-n)
-
-
 
 ### [N Devices control One Computer](/n-to-one/)
 
-  *(The "One Computer" receives the messages in PD or Max.)*
-
-
-
 ### Device-to-Device Communication 
 
-
-
-
-
 ### If Time: One Performer sends a series of interfaces to N Devices
-
-
-
 
 
