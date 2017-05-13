@@ -32,8 +32,8 @@
         event: function(v) {
           // send v.x and v.y through rhizome
           console.log(v);
-          client.send('/frequency', [v.x])
-          client.send('/volume', [v.y])
+          client.send('/pd/frequency', [v.x])
+          client.send('/pd/volume', [v.y])
         }
       })
 
