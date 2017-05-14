@@ -1,19 +1,15 @@
 # Distributed Music Workshop
 
-Leaders: Sebastien Piquemal (Helsinki, Finland) & Ben Taylor (Massachusetts, US)
+Sebastien Piquemal (Helsinki, Finland)
+Ben Taylor (Massachusetts, US)
 
 
 
 ### Outline
 
 Introduction <br>
-Discussion: Concept & History <br>
 [Installation](#installation) <br>
-
-​
-
 [WebPd](#webpd) <br>
-
 [NexusUI](#nexusui) <br>
 [Rhizome](#rhizome) <br>
 [Templates](#templates)
@@ -30,49 +26,18 @@ Performance
 
 # Introduction
 
-
-
-
-
-
-
-
-
-### History
-
-This history of distributed music precedes the smartphone by several decades. (For more on this, come to my [paper](media/history-audience-speaker.pdf) presentation on Thursday!)
-
-In 1974, Jose Maceda's [Ugnayan]() is the first work identified with this genre of performance. He was able to broadcast a 1 hour multi-track *musique concrete* composition over approximately 30 radio stations in Manila, Philipines. The event was highly publicized and city-goers were encouraged to take their radios out into the street to realize the piece.
-
-Maceda’s assistant Ramo ́n Santos notes how Maceda used the unique performance format as a compositional mechanism:
-
-> Instead of reprocessing and reshaping these sounds electronically in a studio, Maceda utilized the human energies and the physical space of town plazas and parks to reprocess the sounds in semi-improvised dispersion schemes.
-
-In other words, Maceda used distribution and participation, rather than the studio, as a means to compose musique concrete, to transform *objet sonores* into music.
-
-![](media/ugnayan-santos.png)
-
-We see this model in many other distributed music performances over the past 2 decades, including Golan Levin's *Dialtones: A Telesymphony* (2001). The composers installed custom ringtones on the audience's phones, and gave them precise seating locations, giving the composers control over both harmonic and spatial aspects.
-
-<img src="media/dialtones-audience.jpg" width="800px">
-
-There have been many more performances in this model since 2001 — check the paper!
-
-
+You can follow along with our [slides](./slides.pdf)
 
 ### How Javascript Enables Distributed Music
 
-Contemporary developments in Javascript enable distributed music, and have led to its proliferation.
+Contemporary developments in Javascript are enabling modern distributed music, and have led to its proliferation.
 
-- Web Audio API: Web audio, a full-featured synthesis engine in the browser, allows websites to become distributed music instruments. This makes for much quicker setup.
+- Web Audio API: Web audio, a full-featured synthesis engine in Javascript, allows mobile browsers to become distributed music instruments. The setup time for the audience is much quicker than when using native mobile apps. In addition to WebPD, you might want to check out the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) and [Tone.js](https://tonejs.github.io/).
 
-  - In addition to WebPD, you might want to check out the Web Audio API and/or Tone.js.
+- ​Socket.io: This Node.js library open a bi-directional data stream using WebSockets. Written in Javascript, it allows developers to write their front-end and back-end in the same language.
 
-- Socket.io:
 
-  ​
-
-Javascript has really expanded from its original use as an interaction engine, to a language that encompasses interface, communication, and sound — all the elements needed to create a distributed performance.
+Javascript has expanded from its original use as an interaction engine, to a language that encompasses interface, communication, and sound — all the elements needed to create a distributed performance.
 
 <img src="media/js-illustr.png" width="350px">
 
@@ -80,57 +45,68 @@ Javascript has really expanded from its original use as an interaction engine, t
 
 ### Our toolkits
 
-- WebPd : https://github.com/sebpiq/WebPd
-- NexusUI : https://taylorbf.github.io/Musicians-Toolkit/api/#intro
-- rhizome : https://github.com/sebpiq/rhizome
+- **Sound**: WebPd : https://github.com/sebpiq/WebPd
+- **Interface**: NexusUI : https://taylorbf.github.io/Musicians-Toolkit/api/#intro
+- **Communication**: rhizome : https://github.com/sebpiq/rhizome
 
 
-# Command-line / terminal / console
 
-Is a program that allows you to run commands on your machine by using a text interface. On Linux and OSX it is called `terminal` and on Windows `PowerShell`. We will use it fairly frequently during this workshop.
 
-With the terminal you can navigate your file system, create / edit files, etc ... If you have never used a terminal, no panic. Here a very short primer.
 
-#. to run a command : type it in the prompt, and press enter
-#. at any moment in your terminal you are located withing a folder on your filesystem. To list the contents of the current folder, run the command `ls`
-#. to navigate to a subfolder directly under your current folder, called for example, *my-files*, run the command `cd my-files`
-#. to navigate to the parent folder of your current folder, run the command `cd ..`
+
 
 
 # Installation
 
+### Command-line basics:
+
+To install node.js and work with node.js, you will need to know use the command line interface on your computer.
+
+The command line is a program that allows you to run commands on your machine by using a text interface. On Linux and OSX it is called **Terminal** and on Windows **PowerShell**. We will use it fairly frequently during this workshop.
+
+With the command line, you can navigate your file system, create & edit files, run scripts, etc ... If you have never used a terminal, no panic. Here a very short primer.
+
+- **To run a command**: type it in the command line prompt and press enter
+- **Listing files:**  At any moment in your terminal you are located withing a folder on your filesystem. To list the contents of the current folder, run the command `ls`
+- **Changing directories:** To navigate to a subfolder within your current folder, run the command `cd foldername`. For example, if the folder's name is my-files, run `cd my-files`
+- **Changing directories to parent:** To navigate to the parent folder of your current folder, run the command `cd ..`
+
+
+
 ## Install Node.js and npm
 
-### Install node with nvm (Linux)
+**Install node with nvm (Linux)**
 
-#. Go to [nvm](https://github.com/creationix/nvm#install-script) web page, and copy the one-liner install script. Depending on your distribution, you might not have `curl` installed, so copy the script starting with `wget` instead.
-#. Paste that script in a terminal and execute.
-#. Then install node by running `nvm install 6` in your terminal.
-#. try that `node` and `npm` are installed correctly by running `node -v` and `npm -v`
-
-
-### Install node with nvm (OSX)
-
-#. Go to [node.js](https://nodejs.org/en/) web page, and run the installer.
-#. Open a terminal and try that `node` and `npm` are installed correctly by running `node -v` and `npm -v`
-
-If running these commands failed, you might need to manually add the node folder to your `PATH` :
+- Go to [nvm](https://github.com/creationix/nvm#install-script) web page, and copy the one-liner install script. Depending on your distribution, you might not have `curl` installed, so copy the script starting with `wget` instead.
+- Paste that script in a terminal and execute.
+- Then install node by running `nvm install 6` in your terminal.
+- try that `node` and `npm` are installed correctly by running `node -v` and `npm -v`
 
 
 
-### Install node on windows
+**Install node with nvm (OSX)**
 
-#. Download from [Node.js](https://nodejs.org/en/), and run the installer
-#. Open PowerShell, and try to run `node -v` as well as `npm -v` to make sure that `node` and `npm` are installed
+- Go to [node.js](https://nodejs.org/en/) web page, and run the installer.
+- Open a terminal and try that `node` and `npm` are installed correctly by running `node -v` and `npm -v`
 
 If running these commands failed, you might need to manually add the node folder to your `PATH` :
 
-#. Figure out first where your node executables are located on your disk, most likely somewhere below `C:\Program Files\nodejs\`.
-#. Open windows system settings `System > Advanced system settings > Environment variables` and add the folder you found in the previous step to the `PATH` variable.
-#. Restart PowerShell, and try to run again `node -v` and `npm -v` commands.
 
 
-## Install a few node libraries
+**Install node on Windows**
+
+- Download from [Node.js](https://nodejs.org/en/), and run the installer
+- Open PowerShell, and try to run `node -v` as well as `npm -v` to make sure that `node` and `npm` are installed
+
+If running these commands failed, you might need to manually add the node folder to your `PATH` :
+
+- Figure out first where your node executables are located on your disk, most likely somewhere below `C:\Program Files\nodejs\`.
+- Open windows system settings `System > Advanced system settings > Environment variables` and add the folder you found in the previous step to the `PATH` variable.
+- Restart PowerShell, and try to run again `node -v` and `npm -v` commands.
+
+
+
+## Install node libraries
 
 Now that node.js is installed properly, let's install a couple of node libraries we will need during the workshop.
 
@@ -141,15 +117,24 @@ npm install -g http-server
 npm install -g rhizome-server
 ```
 
+**Note:** It is possible that you will need to use sudo to install these with admin privileges:
+
+`sudo npm install -g rhizome-server`
+
+
 
 ## Install Pure Data
 
 Download and install Pure Data from the following [page](https://puredata.info/downloads/pure-data).
 
 
-## Code editor
+
+
+## Install a Code editor
 
 Install a text editor for programming. Program such as Word or LibreOffice won't work. We recommend [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/).
+
+
 
 
 
@@ -157,7 +142,7 @@ Install a text editor for programming. Program such as Word or LibreOffice won't
 
 WebPd is a Pure Data runtime impelemented in JavaScript and built on top of Web Audio API.
 
-Let's follow the [getting-started](https://github.com/sebpiq/WebPd#step-by-step-guide) on WebPd's github, but with one little difference : when the instructions ask you start a Python server, you will run the command `http-server` instead.
+Let's follow the [getting-started](https://github.com/sebpiq/WebPd#step-by-step-guide) on WebPd's github, but with one little difference : when the instructions ask you start a Python server, you will run the command `http-server -p 8000` instead, to run a server on port 8000.
 
 
 
@@ -366,13 +351,25 @@ You can try this code out in the [Standalone Web Instrument](/standalone) templa
 
 
 
-
-
-
-
 # Rhizome
 
+The rhizome setup tutorial is [here](https://github.com/sebpiq/rhizome) at the rhizome github.
 
+### Basics
+
+In any template folder, you can start the rhizome server with
+
+```
+rhizome config.js
+```
+
+You *may* need to use sudo to run this with admin privileges, depending on your computer settings:
+
+```
+sudo rhizome config.js
+```
+
+See the templates, such as the [n-to-1] for 
 
 
 
@@ -388,6 +385,4 @@ You can try this code out in the [Standalone Web Instrument](/standalone) templa
 
 ### [N Devices control One Computer](/n-to-one/)
 
-### Device-to-Device Communication
-
-### If Time: One Performer sends a series of interfaces to N Devices
+### [Device-to-Device Communication](n-to-n)
