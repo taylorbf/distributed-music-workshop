@@ -9,6 +9,11 @@
   </head>
   <body>
 
+    <!-- PD Start Button -->
+    <div id="startButton" style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;background-color:black;color:white;font-size:30pt;text-align:center;padding-top:30px;box-sizing:border-box;font-family:courier">
+      Start
+    </div>
+
     <div id="client-banner" class="disconnected">
       Connecting . . .
     </div>
@@ -16,12 +21,14 @@
     <script>
 
       /* Load WebPD */
-
       var patch
       $.get('./pd/main.pd', function(mainStr) {
+        $('#startButton').show()
         // Loading the patch
         patch = Pd.loadPatch(mainStr)
-        Pd.start()
+        Pd.startOnClick($('#startButton').get(0), function() {
+          $('#startButton').hide()
+        })
       })
 
       /* Config rhizome */
@@ -31,33 +38,22 @@
       client.start(function(err) {
         if (err) throw err
         console.log('subscribing...')
-        client.send('/sys/subscribe', ['/pd/frequency'])
-        client.send('/sys/subscribe', ['/pd/volume'])
-    //  is this possible, instead of subscribing to each individually?
-    //  client.send('/sys/subscribe', ['/pd'])
+        client.send('/sys/subscribe', ['/frequency'])
+        client.send('/sys/subscribe', ['/volume'])
         client.send('/sys/subscribe', ['/reset'])
         client.send('/sys/resend', ['/configure']) // Reinitialize with previous parameters
       })
 
       client.on('message', function(addr, args) {
-        console.log('received2:', addr, args)
+        console.log('received:', addr, args)
 
-        if (addr.indexOf("/pd")==0) {
-          var pdAddress = addr.slice(4)
-          Pd.send(pdAddress, args)
-        }
-
-        /*
-        Or you can handle each individually
-
-        if (addr === '/pd/frequency') {
+        if (addr === '/frequency') {
           Pd.send('frequency', args)
         }
 
-        else if (addr === '/pd/volume') {
+        else if (addr === '/volume') {
           Pd.send('volume', args)
         }
-        */
 
       })
 

@@ -9,6 +9,10 @@
   </head>
   <body>
 
+    <div id="startButton" style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;background-color:black;color:white;font-size:30pt;text-align:center;padding-top:30px;box-sizing:border-box;font-family:courier">
+      Start
+    </div>
+
     <div id="client-banner" class="disconnected">
       Connecting . . .
     </div>
@@ -21,12 +25,14 @@
     <script>
 
       /* Load WebPD */
-
       var patch
       $.get('./pd/main.pd', function(mainStr) {
+        $('#startButton').show()
         // Loading the patch
         patch = Pd.loadPatch(mainStr)
-        Pd.start()
+        Pd.startOnClick($('#startButton').get(0), function() {
+          $('#startButton').hide()
+        })
       })
 
       /* Config rhizome */

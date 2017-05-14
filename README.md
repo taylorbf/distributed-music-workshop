@@ -178,7 +178,7 @@ HTML:
 JS:
 
 ```javascript
-var dial = new mt.Dial("target")
+var dial = new mt.Dial("#target")
 ```
 
 
@@ -186,7 +186,7 @@ var dial = new mt.Dial("target")
 *Tip: My preferred method is to use a div element with a display style of inline-block. You also might want to give your element a width and height. So your HTML may look something like this:*
 
 ```html
-<div id="dial" style="width:200px;height:200px;display:inline-block"></div>
+<div id="target" style="width:200px;height:200px;display:inline-block"></div>
 ```
 
 
@@ -273,7 +273,7 @@ toggle.on('change',function(v) {
 });
 ```
 
-#### If the event data is a JS object ( with { } around it )
+#### If the event data is a JS Object 
 
 However, sometimes your interface data might be a Javascript object with several properties, and PD won't understand it. This will especially happen with the more complex interfaces: sequencer, piano, multislider, envelope, etc.
 
@@ -364,13 +364,13 @@ The rhizome setup tutorial is [here](https://github.com/sebpiq/rhizome) at the r
 
 ### Basics
 
-In any template folder, you can start the rhizome server with
+In any template folder using rhizome — such as the 1-to-n, n-to-1, and n-to-n templates — you can start the rhizome server by running the following command in your Terminal/Shell.
 
 ```
 rhizome config.js
 ```
 
-You *may* need to use sudo to run this with admin privileges, depending on your computer settings:
+You may need to use sudo to run this with admin privileges, depending on your computer settings:
 
 ```
 sudo rhizome config.js
@@ -386,7 +386,7 @@ See the templates, such as the [1-to-n](./one-to-n) template to see rhizome conf
 
 # Templates
 
-### [Standalone web instrument](/standalone/)  
+### [Standalone Web Instrument](/standalone/)  
 
 ### [One Performer controls N Devices](/one-to-n)
 
