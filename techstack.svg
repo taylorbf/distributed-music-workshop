@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 15371"
+   sodipodi:docname="techstack.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path5134"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5131"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ffffff;stroke-width:1pt;stroke-opacity:1;fill:#ffffff;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5123">
+      <stop
+         style="stop-color:#60c9ff;stop-opacity:1;"
+         offset="0"
+         id="stop5119" />
+      <stop
+         style="stop-color:#60c9ff;stop-opacity:0;"
+         offset="1"
+         id="stop5121" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5079">
+      <stop
+         style="stop-color:#00ff71;stop-opacity:1;"
+         offset="0"
+         id="stop5075" />
+      <stop
+         style="stop-color:#00ff71;stop-opacity:0;"
+         offset="1"
+         id="stop5077" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="translate(15.345835)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient5079"
+       id="linearGradient5081-0"
+       x1="193.14583"
+       y1="46.96875"
+       x2="232.83334"
+       y2="46.96875"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5123"
+       id="linearGradient5125"
+       x1="232.83333"
+       y1="45.645832"
+       x2="195.79167"
+       y2="45.645832"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(15.345837)" />
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5131-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-6"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5134-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="469.47779"
+     inkscape:cy="1021.2159"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="false"
+     inkscape:window-width="1867"
+     inkscape:window-height="1056"
+     inkscape:window-x="53"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3727" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.28505272"
+       id="rect4977"
+       width="343.95834"
+       height="89.958336"
+       x="-47.625"
+       y="-9.916666" />
+    <rect
+       id="rect3767"
+       width="7.9375038"
+       height="37.041668"
+       x="-19.1875"
+       y="-2.6458442"
+       style="fill:#7ad2ff;fill-opacity:1;stroke-width:0.11832528"
+       transform="rotate(-90)" />
+    <rect
+       id="rect3767-5"
+       width="18.520842"
+       height="37.041668"
+       x="-29.770834"
+       y="37.041649"
+       style="fill:#60c9ff;fill-opacity:1;stroke-width:0.18074486"
+       transform="rotate(-90)" />
+    <rect
+       id="rect3767-5-2"
+       width="7.9374976"
+       height="76.729164"
+       x="-40.354164"
+       y="-2.6458335"
+       style="fill:#00ff71;fill-opacity:1;stroke-width:0.17029911"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="7.9374995"
+       y="17.070833"
+       id="text4704"><tspan
+         sodipodi:role="line"
+         id="tspan4702"
+         x="7.9374995"
+         y="17.070833"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166651px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.26458332">WebPd</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="44.85157"
+       y="21.30283"
+       id="text4704-1"><tspan
+         sodipodi:role="line"
+         id="tspan4702-7"
+         x="44.85157"
+         y="21.30283"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.26458332">NexusUI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="22.321703"
+       y="37.819801"
+       id="text4704-2-2"><tspan
+         sodipodi:role="line"
+         id="tspan4702-72-6"
+         x="22.321703"
+         y="37.819801"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.26458332">WebSocket</tspan></text>
+    <rect
+       id="rect3767-61"
+       width="7.9375038"
+       height="37.041668"
+       x="-29.770838"
+       y="-2.6458335"
+       style="fill:#60c9ff;fill-opacity:1;stroke-width:0.11832528"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="3.0944138"
+       y="27.679684"
+       id="text4704-2"><tspan
+         sodipodi:role="line"
+         id="tspan4702-72"
+         x="3.0944138"
+         y="27.679684"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.29166698px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.26458332">Web Audio</tspan></text>
+    <rect
+       id="rect3767-5-2-5"
+       width="7.9374976"
+       height="76.729164"
+       x="-50.937496"
+       y="-2.6458335"
+       style="fill:#00ff71;fill-opacity:1;stroke-width:0.17029911"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="3.0823221"
+       y="48.211067"
+       id="text4704-2-2-1"><tspan
+         sodipodi:role="line"
+         id="tspan4702-72-6-0"
+         x="3.0823221"
+         y="48.211067"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.26458332">JavaScript + HTML + CSS</tspan></text>
+    <rect
+       id="rect3767-5-2-9"
+       width="7.9374976"
+       height="76.729164"
+       x="-40.354164"
+       y="103.1875"
+       style="fill:#00ff71;fill-opacity:1;stroke-width:0.17029911"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="130.82771"
+       y="37.552532"
+       id="text4704-2-2-4"><tspan
+         sodipodi:role="line"
+         id="tspan4702-72-6-9"
+         x="130.82771"
+         y="37.552532"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.26458332">rhizome</tspan></text>
+    <rect
+       id="rect3767-5-2-5-0"
+       width="7.9374976"
+       height="76.729164"
+       x="-50.9375"
+       y="103.1875"
+       style="fill:#00ff71;fill-opacity:1;stroke-width:0.17029911"
+       transform="rotate(-90)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="131.09898"
+       y="48.211071"
+       id="text4704-2-2-1-9"><tspan
+         sodipodi:role="line"
+         id="tspan4702-72-6-0-1"
+         x="131.09898"
+         y="48.211071"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.26458332">Node.js</tspan></text>
+    <rect
+       style="fill:#00ff71;fill-opacity:1;stroke-width:0.26458332"
+       id="rect4901"
+       width="37.041668"
+       height="7.9375"
+       x="208.49146"
+       y="32.416668" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="223.06505"
+       y="38.220036"
+       id="text4704-2-2-4-7"><tspan
+         sodipodi:role="line"
+         id="tspan4702-72-6-9-7"
+         x="223.06505"
+         y="38.220036"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.26458332">OSC</tspan></text>
+    <rect
+       style="fill:url(#linearGradient5125);fill-opacity:1;stroke-width:0.27386978"
+       id="rect4901-1"
+       width="39.687511"
+       height="7.9375"
+       x="208.49146"
+       y="43" />
+    <rect
+       style="fill:#60c9ff;fill-opacity:1;stroke-width:0.50663847"
+       id="rect4901-15"
+       width="37.041668"
+       height="29.104166"
+       x="248.17896"
+       y="21.833334" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="254.28725"
+       y="37.771416"
+       id="text4704-2-2-4-7-9"><tspan
+         sodipodi:role="line"
+         id="tspan4702-72-6-9-7-7"
+         x="254.28725"
+         y="37.771416"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';stroke-width:0.26458332">Pure Data</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4969"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion4971"><rect
+           id="rect4973"
+           width="120"
+           height="60"
+           x="100"
+           y="242.51968" /></flowRegion><flowPara
+         id="flowPara4975"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4979"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,8.8198939,3.2072343)"><flowRegion
+         id="flowRegion4981"><rect
+           id="rect4983"
+           width="180"
+           height="50"
+           x="40"
+           y="222.51968" /></flowRegion><flowPara
+         id="flowPara4985"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#ffffff;fill-opacity:1">Web client</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4979-1"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,120.36666,3.2058848)"><flowRegion
+         id="flowRegion4981-1"><rect
+           id="rect4983-5"
+           width="180"
+           height="50"
+           x="40"
+           y="222.51968" /></flowRegion><flowPara
+         id="flowPara4985-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#ffffff;fill-opacity:1">Server</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4979-8"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,211.31219,3.2864706)"><flowRegion
+         id="flowRegion4981-4"><rect
+           id="rect4983-8"
+           width="180"
+           height="50"
+           x="40"
+           y="222.51968" /></flowRegion><flowPara
+         id="flowPara4985-1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#ffffff;fill-opacity:1">Desktop client</flowPara></flowRoot>    <rect
+       style="fill:url(#linearGradient5081-0);fill-opacity:1;stroke-width:0.27386978"
+       id="rect4901-1-4"
+       width="39.687511"
+       height="7.9375"
+       x="208.49144"
+       y="42.999992" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)"
+       d="m 76.729164,43 c 23.812506,0 23.812506,0 23.812506,0"
+       id="path5129"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:0.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart-4);marker-end:url(#Arrow1Lend-6)"
+       d="m 182.5625,43 c 23.8125,0 23.8125,0 23.8125,0"
+       id="path5129-1"
+       inkscape:connector-curvature="0" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4979-7"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00ff71;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-50.728837,-25.47254)"><flowRegion
+         id="flowRegion4981-5"
+         style="fill:#00ff71;fill-opacity:1"><rect
+           id="rect4983-9"
+           width="180"
+           height="50"
+           x="40"
+           y="222.51968"
+           style="fill:#00ff71;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara4985-6"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#00ff71;fill-opacity:1">communication</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4979-7-2"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#60c9ff;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-53.380054,-46.382694)"><flowRegion
+         id="flowRegion4981-5-1"
+         style="fill:#60c9ff;fill-opacity:1"><rect
+           id="rect4983-9-7"
+           width="180"
+           height="50"
+           x="40"
+           y="222.51968"
+           style="fill:#60c9ff;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara4985-6-8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono';fill:#60c9ff;fill-opacity:1">user interface</flowPara></flowRoot>  </g>
+</svg>
