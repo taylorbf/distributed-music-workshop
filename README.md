@@ -80,12 +80,9 @@ Javascript has really expanded from its original use as an interaction engine, t
 
 ### Our toolkits
 
-links to our 3 toolkits here...
-
-
-
-
-
+- WebPd : https://github.com/sebpiq/WebPd
+- NexusUI : https://taylorbf.github.io/Musicians-Toolkit/api/#intro
+- rhizome : https://github.com/sebpiq/rhizome
 
 
 # Command-line / terminal / console
@@ -102,7 +99,9 @@ With the terminal you can navigate your file system, create / edit files, etc ..
 
 # Installation
 
-## Install node with nvm (Linux)
+## Install Node.js and npm
+
+### Install node with nvm (Linux)
 
 #. Go to [nvm](https://github.com/creationix/nvm#install-script) web page, and copy the one-liner install script. Depending on your distribution, you might not have `curl` installed, so copy the script starting with `wget` instead.
 #. Paste that script in a terminal and execute.
@@ -110,13 +109,16 @@ With the terminal you can navigate your file system, create / edit files, etc ..
 #. try that `node` and `npm` are installed correctly by running `node -v` and `npm -v`
 
 
-## Install node with nvm (OSX)
+### Install node with nvm (OSX)
 
 #. Go to [node.js](https://nodejs.org/en/) web page, and run the installer.
 #. Open a terminal and try that `node` and `npm` are installed correctly by running `node -v` and `npm -v`
 
+If running these commands failed, you might need to manually add the node folder to your `PATH` :
 
-## Install node on windows
+
+
+### Install node on windows
 
 #. Download from [Node.js](https://nodejs.org/en/), and run the installer
 #. Open PowerShell, and try to run `node -v` as well as `npm -v` to make sure that `node` and `npm` are installed
@@ -126,6 +128,18 @@ If running these commands failed, you might need to manually add the node folder
 #. Figure out first where your node executables are located on your disk, most likely somewhere below `C:\Program Files\nodejs\`.
 #. Open windows system settings `System > Advanced system settings > Environment variables` and add the folder you found in the previous step to the `PATH` variable.
 #. Restart PowerShell, and try to run again `node -v` and `npm -v` commands.
+
+
+## Install a few node libraries
+
+Now that node.js is installed properly, let's install a couple of node libraries we will need during the workshop.
+
+Run the two following commands :
+
+```
+npm install -g http-server
+npm install -g rhizome-server
+```
 
 
 ## Install Pure Data
@@ -139,18 +153,11 @@ Install a text editor for programming. Program such as Word or LibreOffice won't
 
 
 
-
-
-
-
-
 # WebPd
 
+WebPd is a Pure Data runtime impelemented in JavaScript and built on top of Web Audio API.
 
-
-
-
-
+Let's follow the [getting-started](https://github.com/sebpiq/WebPd#step-by-step-guide) on WebPd's github, but with one little difference : when the instructions ask you start a Python server, you will run the command `http-server` instead.
 
 
 
