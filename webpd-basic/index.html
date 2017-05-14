@@ -1,6 +1,5 @@
 <html>
   <head>
-    <script type="text/javascript" src="libraries/mt.js"></script>
     <script type="text/javascript" src="libraries/webpd-latest.js"></script>
     <script type="text/javascript" src="libraries/jquery.js"></script>
   </head>
@@ -17,21 +16,6 @@
         // Loading the patch
         patch = Pd.loadPatch(mainStr)
         Pd.start()
-      })
-
-      /* Config the UI */
-
-      var position = new mt.Position('#position',{
-        minX: 0,
-        maxX: 500,
-        minY: 0,
-        maxY: 1,
-        event: function(v) {
-          // send v.x and v.y to PD
-          console.log(v);
-          Pd.send('frequency', [v.x])
-          Pd.send('volume', [v.y])
-        }
       })
 
     </script>
