@@ -5,17 +5,17 @@
   </head>
   <body>
 
-    <div id="position" style="height:100%"></div>
-
+    <button id="startButton" style="display:none;">Start</button>
     <script>
-
       /* Load WebPD */
-
       var patch
       $.get('./pd/main.pd', function(mainStr) {
+        $('#startButton').show()
         // Loading the patch
         patch = Pd.loadPatch(mainStr)
-        Pd.start()
+        Pd.startOnClick($('#startButton').get(0), function() {
+          $('#startButton').hide()
+        })
       })
 
     </script>

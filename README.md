@@ -1,13 +1,14 @@
 # Distributed Music Workshop
 
-Sebastien Piquemal (Helsinki, Finland)
+Sébastien Piquemal (Helsinki, Finland)
 Ben Taylor (Massachusetts, US)
 
 
 
 ### Outline
 
-Introduction <br>
+Introduction
+Overview <br>
 [Installation](#installation) <br>
 [WebPd](#webpd) <br>
 [NexusUI](#nexusui) <br>
@@ -34,10 +35,10 @@ Contemporary developments in Javascript are enabling modern distributed music, a
 
 - Web Audio API: Web audio, a full-featured synthesis engine in Javascript, allows mobile browsers to become distributed music instruments. The setup time for the audience is much quicker than when using native mobile apps. In addition to WebPD, you might want to check out the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) and [Tone.js](https://tonejs.github.io/).
 
-- ​Socket.io: This Node.js library open a bi-directional data stream using WebSockets. Written in Javascript, it allows developers to write their front-end and back-end in the same language.
+- Socket.io: This Node.js library opens a bi-directional data stream using WebSockets. Written in Javascript, it allows developers to write front-end (interface) code and back-end (server) code in the same language.
 
 
-Javascript has expanded from its original use as an interaction engine, to a language that encompasses interface, communication, and sound — all the elements needed to create a distributed performance.
+Javascript has expanded from its original use as an interaction engine, to a language that encompasses interface, communication, and sound— all the elements needed to create a distributed performance.
 
 <img src="media/js-illustr.png" width="350px">
 
@@ -68,8 +69,9 @@ With the command line, you can navigate your file system, create & edit files, r
 
 - **To run a command**: type it in the command line prompt and press enter
 - **Listing files:**  At any moment in your terminal you are located withing a folder on your filesystem. To list the contents of the current folder, run the command `ls`
-- **Changing directories:** To navigate to a subfolder within your current folder, run the command `cd foldername`. For example, if the folder's name is my-files, run `cd my-files`
-- **Changing directories to parent:** To navigate to the parent folder of your current folder, run the command `cd ..`
+- **Changing directory:** To navigate to a subfolder within your current folder, run the command `cd foldername`. For example, if the folder's name is my-files, run `cd my-files`
+- **Changing directory (to parent):** To navigate to the parent folder of your current folder, run the command `cd ..`
+
 
 
 
@@ -91,8 +93,6 @@ With the command line, you can navigate your file system, create & edit files, r
 
 If running these commands failed, you might need to manually add the node folder to your `PATH` :
 
-
-
 **Install node on Windows**
 
 - Download from [Node.js](https://nodejs.org/en/), and run the installer
@@ -103,6 +103,7 @@ If running these commands failed, you might need to manually add the node folder
 - Figure out first where your node executables are located on your disk, most likely somewhere below `C:\Program Files\nodejs\`.
 - Open windows system settings `System > Advanced system settings > Environment variables` and add the folder you found in the previous step to the `PATH` variable.
 - Restart PowerShell, and try to run again `node -v` and `npm -v` commands.
+
 
 
 
@@ -132,7 +133,7 @@ Download and install Pure Data from the following [page](https://puredata.info/d
 
 ## Install a Code editor
 
-Install a text editor for programming. Program such as Word or LibreOffice won't work. We recommend [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/).
+Install a text editor for programming. We recommend [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/). Programs such as Word or LibreOffice won't work. 
 
 
 
@@ -140,9 +141,15 @@ Install a text editor for programming. Program such as Word or LibreOffice won't
 
 # WebPd
 
-WebPd is a Pure Data runtime impelemented in JavaScript and built on top of Web Audio API.
+WebPd is a Pure Data runtime implemented in JavaScript and built on top of Web Audio API.
 
-Let's follow the [getting-started](https://github.com/sebpiq/WebPd#step-by-step-guide) on WebPd's github, but with one little difference : when the instructions ask you start a Python server, you will run the command `http-server -p 8000` instead, to run a server on port 8000.
+Full WebPd instructions are [here](https://github.com/sebpiq/WebPd#step-by-step-guide). 
+
+However, we've prepared a template for you to jump start your use of WebPd.
+
+- Download this repository if you haven't yet. At the top of this page, click the big green button that says "Clone or Download", and choose "Download Zip" to download the contents of this repository.
+- Open the "webpd-basic" folder in your code editor
+- Check out the [Readme]() for the template.
 
 
 
