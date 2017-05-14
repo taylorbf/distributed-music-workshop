@@ -369,15 +369,15 @@ You *may* need to use sudo to run this with admin privileges, depending on your 
 sudo rhizome config.js
 ```
 
-See the templates, such as the [n-to-1] for 
+
+
+See the templates, such as the [1-to-n](./one-to-n) template to see rhizome configured to control an array of devices from a central interface. 
 
 
 
 
 
 # Templates
-
-
 
 ### [Standalone web instrument](/standalone/)  
 
