@@ -1,0 +1,15 @@
+#N canvas 733 320 594 395 10;
+#X msg 262 167 disconnect;
+#X obj 218 195 netsend -u -b;
+#X obj 101 69 oscformat bla blo bli;
+#X obj 101 146 list prepend send;
+#X obj 101 171 list trim;
+#X msg 101 35 1 2 3;
+#X msg 237 147 connect localhost 5001;
+#X text 269 68 OSC address /bla/blo/bli;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 5 0 2 0;
+#X connect 6 0 1 0;
