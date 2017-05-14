@@ -10,7 +10,7 @@ Introduction <br>
 Discussion: Concept & History <br>
 [Installation](#installation) <br>
 
-​	
+​
 
 [WebPd](#webpd) <br>
 
@@ -64,7 +64,7 @@ There have been many more performances in this model since 2001 — check the pa
 
 Contemporary developments in Javascript enable distributed music, and have led to its proliferation.
 
-- Web Audio API: Web audio, a full-featured synthesis engine in the browser, allows websites to become distributed music instruments. This makes for much quicker setup. 
+- Web Audio API: Web audio, a full-featured synthesis engine in the browser, allows websites to become distributed music instruments. This makes for much quicker setup.
 
   - In addition to WebPD, you might want to check out the Web Audio API and/or Tone.js.
 
@@ -88,20 +88,57 @@ links to our 3 toolkits here...
 
 
 
+# Command-line / terminal / console
 
+Is a program that allows you to run commands on your machine by using a text interface. On Linux and OSX it is called `terminal` and on Windows `PowerShell`. We will use it fairly frequently during this workshop.
+
+With the terminal you can navigate your file system, create / edit files, etc ... If you have never used a terminal, no panic. Here a very short primer.
+
+#. to run a command : type it in the prompt, and press enter
+#. at any moment in your terminal you are located withing a folder on your filesystem. To list the contents of the current folder, run the command `ls`
+#. to navigate to a subfolder directly under your current folder, called for example, *my-files*, run the command `cd my-files`
+#. to navigate to the parent folder of your current folder, run the command `cd ..`
 
 
 # Installation
 
-**Install node with nvm**
+## Install node with nvm (Linux)
 
-**Install Pure Data**
+#. Go to [nvm](https://github.com/creationix/nvm#install-script) web page, and copy the one-liner install script. Depending on your distribution, you might not have `curl` installed, so copy the script starting with `wget` instead.
+#. Paste that script in a terminal and execute.
+#. Then install node by running `nvm install 6` in your terminal.
+#. try that `node` and `npm` are installed correctly by running `node -v` and `npm -v`
 
-**Atom / Sublime**
 
-rhizome
+## Install node with nvm (OSX)
 
-incl command line primer
+#. Go to [node.js](https://nodejs.org/en/) web page, and run the installer.
+#. Open a terminal and try that `node` and `npm` are installed correctly by running `node -v` and `npm -v`
+
+
+## Install node on windows
+
+#. Download from [Node.js](https://nodejs.org/en/), and run the installer
+#. Open PowerShell, and try to run `node -v` as well as `npm -v` to make sure that `node` and `npm` are installed
+
+If running these commands failed, you might need to manually add the node folder to your `PATH` :
+
+#. Figure out first where your node executables are located on your disk, most likely somewhere below `C:\Program Files\nodejs\`.
+#. Open windows system settings `System > Advanced system settings > Environment variables` and add the folder you found in the previous step to the `PATH` variable.
+#. Restart PowerShell, and try to run again `node -v` and `npm -v` commands.
+
+
+## Install Pure Data
+
+Download and install Pure Data from the following [page](https://puredata.info/downloads/pure-data).
+
+
+## Code editor
+
+Install a text editor for programming. Program such as Word or LibreOffice won't work. We recommend [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/).
+
+
+
 
 
 
@@ -121,9 +158,9 @@ incl command line primer
 
 NexusUI is a set of musical interface components written in HTML, SVG, and Javascript. They will be the interface engine for our distributed music instruments.
 
-This updated version of NexusUI is in a beta period right now, so if you find bugs, please speak up and feel free to [report them on Github](). 
+This updated version of NexusUI is in a beta period right now, so if you find bugs, please speak up and feel free to [report them on Github]().
 
-A full tutorial on NexusUI is in the [NexusUI API](). 
+A full tutorial on NexusUI is in the [NexusUI API]().
 
 Here are the basics --
 
@@ -131,7 +168,7 @@ Here are the basics --
 
 NexusUI transforms regular HTML elements into interfaces.
 
-Create an HTML element in the body of your document and give it an ID. You can use **div** or **span**. 
+Create an HTML element in the body of your document and give it an ID. You can use **div** or **span**.
 
 HTML:
 
@@ -157,7 +194,7 @@ var dial = new mt.Dial("target")
 
 ### Configuring the interface
 
-You can give your interface certain settings when you create it. 
+You can give your interface certain settings when you create it.
 
 ```javascript
 var dial = new mt.Dial('#target',{
@@ -191,7 +228,7 @@ Check each interface's API for a list of its events. (Almost all interfaces use 
 
 We can integrate NexusUI with WebPD by sending the interface's event data to WebPD.
 
-A good first step is to log your data. 
+A good first step is to log your data.
 
 ```javascript
 dial.on('change',function(v) {
@@ -224,14 +261,14 @@ var toggle = new mt.Toggle("#target")
 
 toggle.on('change',function(v) {
   var state;
-  if (v) { 
-    state = 1 
+  if (v) {
+    state = 1
   } else {
     state = 0
   }
   // Or, use the shorthand:    
   // var state = v ? 1 : 0;
-  
+
   // Then send the state number value to PD
   Pd.send('note', [state]);
 });
@@ -344,8 +381,6 @@ You can try this code out in the [Standalone Web Instrument](/standalone) templa
 
 ### [N Devices control One Computer](/n-to-one/)
 
-### Device-to-Device Communication 
+### Device-to-Device Communication
 
 ### If Time: One Performer sends a series of interfaces to N Devices
-
-
