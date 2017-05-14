@@ -1,14 +1,14 @@
 # Distributed Music Workshop
 
 Sébastien Piquemal (Helsinki, Finland)
+
 Ben Taylor (Massachusetts, US)
 
 
 
 ### Outline
 
-Introduction
-Overview <br>
+[Introduction & Overview](#introduction) <br>
 [Installation](#installation) <br>
 [WebPd](#webpd) <br>
 [NexusUI](#nexusui) <br>
@@ -31,26 +31,26 @@ You can follow along with our [slides](./slides.pdf)
 
 ### How Javascript Enables Distributed Music
 
-Contemporary developments in Javascript are enabling modern distributed music, and have led to its proliferation.
+Contemporary developments in Javascript are enabling modern distributed music, and have led to its growth as a performance practice:
 
 - Web Audio API: Web audio, a full-featured synthesis engine in Javascript, allows mobile browsers to become distributed music instruments. The setup time for the audience is much quicker than when using native mobile apps. In addition to WebPD, you might want to check out the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) and [Tone.js](https://tonejs.github.io/).
 
-- Socket.io: This Node.js library opens a bi-directional data stream using WebSockets. Written in Javascript, it allows developers to write front-end (interface) code and back-end (server) code in the same language.
+- Socket.io is a Node.js library which opens a bi-directional communication channel between remote devices using WebSockets. Written in Javascript, it allows developers to write front-end (interface) code and back-end (server) code in the same language.
 
 
 Javascript has expanded from its original use as an interaction engine, to a language that encompasses interface, communication, and sound— all the elements needed to create a distributed performance.
+
+
 
 <img src="media/js-illustr.png" width="350px">
 
 
 
-### Our toolkits
+In this workshop, we will look at three toolkits which develop these aspects of distributed music:
 
 - **Sound**: WebPd : https://github.com/sebpiq/WebPd
 - **Interface**: NexusUI : https://taylorbf.github.io/Musicians-Toolkit/api/#intro
-- **Communication**: rhizome : https://github.com/sebpiq/rhizome
-
-
+- **Communication**: Rhizome : https://github.com/sebpiq/rhizome
 
 
 
@@ -139,6 +139,20 @@ Install a text editor for programming. We recommend [Atom](https://flight-manual
 
 
 
+
+
+
+
+___
+
+Now the fun part!
+
+___
+
+
+
+
+
 # WebPd
 
 WebPd is a Pure Data runtime implemented in JavaScript and built on top of Web Audio API.
@@ -148,8 +162,17 @@ Full WebPd instructions are [here](https://github.com/sebpiq/WebPd#step-by-step-
 However, we've prepared a template for you to jump start your use of WebPd.
 
 - Download this repository if you haven't yet. At the top of this page, click the big green button that says "Clone or Download", and choose "Download Zip" to download the contents of this repository.
+
 - Open the "webpd-basic" folder in your code editor
+
 - Check out the [Readme]() for the template.
+
+  ​
+
+
+**Let's pause here and hack a bit with WebPd**
+
+
 
 
 
@@ -356,6 +379,10 @@ You can try this code out in the [Standalone Web Instrument](/standalone) templa
 
 
 
+**Let's pause here to develop your instrument using NexusUI to control WebPD.**
+
+
+
 
 
 # Rhizome
@@ -393,3 +420,12 @@ See the templates, such as the [1-to-n](./one-to-n) template to see rhizome conf
 ### [N Devices control One Computer](/n-to-one/)
 
 ### [Device-to-Device Communication](n-to-n)
+
+
+
+# Lab
+
+**Take one of the above templates as a starting point for developing your own distributed music instrument.**
+
+If you're not sure where to get started, we recommend "One Performer Controls N Devices," which uses the audience as a speaker array.
+
