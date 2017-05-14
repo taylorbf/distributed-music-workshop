@@ -1,0 +1,20 @@
+
+#client-banner {
+  font-family: gill sans, helvetica, sans serif;
+  font-size: 35px;
+  margin: 100px auto;
+  letter-spacing: 0.1em;
+  text-align:center;
+}
+
+.disconnected {
+  color:#ddd;
+}
+
+.connected {
+  color:#2fb;
+}
+
+body {
+  background-color:#222;
+}

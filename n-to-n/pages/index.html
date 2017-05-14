@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <script src="/rhizome/rhizome.js"></script>
+    <script type="text/javascript" src="libraries/mt.js"></script>
+    <script type="text/javascript" src="libraries/jquery.js"></script>
+    <script type="text/javascript" src="libraries/webpd-latest.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div id="client-banner" class="disconnected">
+      Connecting . . .
+    </div>
+
+
+    <div id="button" style="width:200px;height:200px;margin:30px auto;"></div>
+
+
+
+    <script>
+
+      /* Load WebPD */
+
+      var patch
+      $.get('./pd/main.pd', function(mainStr) {
+        // Loading the patch
+        patch = Pd.loadPatch(mainStr)
+        Pd.start()
+      })
+
+      /* Config rhizome */
+
+      var client = new rhizome.Client()
+
+      client.start(function(err) {
+        if (err) throw err
+        console.log('subscribing...')
+        client.send('/sys/subscribe', ['/bleep'])
+      })
+
+      client.on('connected', function() {
+        console.log('connected')
+        $("#client-banner").removeClass("disconnected").addClass("connected").html("Connected")
+      })
+
+      client.on('message', function(addr, args) {
+        console.log('received2:', addr, args)
+
+
+        if (addr === '/bleep') {
+          Pd.send('bleep', args)
+          $("body").css("background-color","#ddd")
+          setTimeout(function() {
+            $("body").css("background-color","#222")
+          }, 100)
+        }
+
+      })
+
+
+      /* Config the UI */
+
+      // the event should probably be placed into the client.start callback above
+      var button = new mt.Button('#button', {
+        mode: "button",
+        event: function(v) {
+          console.log(v);
+          if (v) {
+            client.send('/bleep', [1])
+          }
+        }
+      })
+
+    </script>
+
+  </body>
+</html>

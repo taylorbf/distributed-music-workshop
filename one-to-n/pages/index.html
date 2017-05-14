@@ -31,28 +31,40 @@
       client.start(function(err) {
         if (err) throw err
         console.log('subscribing...')
-        client.send('/sys/subscribe', ['/frequency'])
-        client.send('/sys/subscribe', ['/volume'])
+        client.send('/sys/subscribe', ['/pd/frequency'])
+        client.send('/sys/subscribe', ['/pd/volume'])
+    //  is this possible, instead of subscribing to each individually?
+    //  client.send('/sys/subscribe', ['/pd'])
         client.send('/sys/subscribe', ['/reset'])
         client.send('/sys/resend', ['/configure']) // Reinitialize with previous parameters
-
-        $("#client-banner").removeClass("disconnected").addClass("connected").html("Connected")
       })
 
       client.on('message', function(addr, args) {
-        console.log('received:', addr, args)
+        console.log('received2:', addr, args)
 
-        if (addr === '/frequency') {
+        if (addr.indexOf("/pd")==0) {
+          var pdAddress = addr.slice(4)
+          Pd.send(pdAddress, args)
+        }
+
+        /*
+        Or you can handle each individually
+
+        if (addr === '/pd/frequency') {
           Pd.send('frequency', args)
         }
 
-        else if (addr === '/volume') {
+        else if (addr === '/pd/volume') {
           Pd.send('volume', args)
         }
+        */
 
       })
 
-      client.on('connected', function() { console.log('metro connected') })
+      client.on('connected', function() {
+        console.log('connected')
+        $("#client-banner").removeClass("disconnected").addClass("connected").html("Connected")
+      })
 
     </script>
 
