@@ -180,9 +180,9 @@ However, we've prepared a template for you to jump start your use of WebPd.
 
 NexusUI is a set of musical interface components written in HTML, SVG, and Javascript. They will be the interface engine for our distributed music instruments.
 
-This updated version of NexusUI is in a beta period right now, so if you find bugs, please speak up and feel free to [report them on Github]().
+This updated version of NexusUI is in a beta period right now, so if you find bugs, please speak up and feel free to [report them on Github](https://github.com/taylorbf/Musicians-Toolkit/issues).
 
-A full tutorial on NexusUI is in the [NexusUI API]().
+A full tutorial on NexusUI is in the [NexusUI API](https://taylorbf.github.io/Musicians-Toolkit/api/#intro).
 
 Here are the basics --
 
