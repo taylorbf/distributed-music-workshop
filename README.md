@@ -133,7 +133,7 @@ Download and install Pure Data from the following [page](https://puredata.info/d
 
 ## Install a Code editor
 
-Install a text editor for programming. We recommend [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/). Programs such as Word or LibreOffice won't work. 
+Install a text editor for programming. We recommend [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/). Programs such as Word or LibreOffice won't work.
 
 
 
@@ -150,14 +150,23 @@ Now the fun part!
 ___
 
 
+# General informations
 
+## The developer tools
+
+To debug your web page, you might want to get familiar with the *developer tools*. In Chrome, type `ctrl+shit+i` on Linux / Windows, `cmd+option+i` on OSX, and a sidebar will open with different tools for debugging / profiling your code. The `console` tab gives you error messages and other info. At the bottom of the console, there is also a little prompt that allows you to type-in JavaScript directly. You can use it to test some of your code that doesn't seem to work directly in the browser.
+
+
+## Disabling browser cache  
+
+While developing your interface and changing your Pd patch, you will reload the web page quite frequently. Browsers are optimized to not reload content that they believe hasn't changed. This might be a problem as your Pd patch might not be reloaded after you have changed and saved it. It is therefore recommended to deactivate browser cache. On Chrome / Chromium, open the developer tools `ctrl+shit+i` on Linux / Windows, `cmd+option+i` on OSX, open the tab `Network`, and tick the box **Disable cache**.
 
 
 # WebPd
 
 WebPd is a Pure Data runtime implemented in JavaScript and built on top of Web Audio API.
 
-Full WebPd instructions are [here](https://github.com/sebpiq/WebPd#step-by-step-guide). 
+Full WebPd instructions are [here](https://github.com/sebpiq/WebPd#step-by-step-guide).
 
 However, we've prepared a template for you to jump start your use of WebPd.
 
@@ -296,7 +305,7 @@ toggle.on('change',function(v) {
 });
 ```
 
-#### If the event data is a JS Object 
+#### If the event data is a JS Object
 
 However, sometimes your interface data might be a Javascript object with several properties, and PD won't understand it. This will especially happen with the more complex interfaces: sequencer, piano, multislider, envelope, etc.
 
@@ -405,7 +414,7 @@ sudo rhizome config.js
 
 
 
-See the templates, such as the [1-to-n](./one-to-n) template to see rhizome configured to control an array of devices from a central interface. 
+See the templates, such as the [1-to-n](./one-to-n) template to see rhizome configured to control an array of devices from a central interface.
 
 
 
@@ -428,4 +437,3 @@ See the templates, such as the [1-to-n](./one-to-n) template to see rhizome conf
 **Take one of the above templates as a starting point for developing your own distributed music instrument.**
 
 If you're not sure where to get started, we recommend "One Performer Controls N Devices," which uses the audience as a speaker array.
-
