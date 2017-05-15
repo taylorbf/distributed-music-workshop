@@ -165,7 +165,7 @@ However, we've prepared a template for you to jump start your use of WebPd.
 
 - Open the "webpd-basic" folder in your code editor
 
-- Check out the [Readme]() for the template.
+- Check out the [Readme](./webpd-basic) for the template.
 
   ​
 
